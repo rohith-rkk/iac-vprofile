@@ -43,7 +43,7 @@ jobs:
 
       - name: Terraform Init
         id: init
-        run: terraform init -backend-config="bucket=${{ env.TF_STATE_BUCKET }}"
+        run: terraform init -backend-config="bucket=$TF_STATE_BUCKET
       
       - name: Terraform format
         id: fmt
